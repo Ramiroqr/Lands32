@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Lands.Views.LoginPage"
+    BindingContext="{Binding Main, Source={StaticResource Locator}}"
+    Title="Lands">
+    <ContentPage.Content>
+        <StackLayout
+            Margin="5">
+            <Image
+                Source="onu_logo"
+                WidthRequest="150">
+            </Image>
+            <Grid
+                Margin="10,0"
+                VerticalOptions="CenterAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2.5*"/>
+                </Grid.ColumnDefinitions>
+                <Label
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Text="Email"
+                    VerticalOptions="Center">
+                </Label>
+                <Entry
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Keyboard="Email"
+                    Placeholder="Enter your email...">
+                </Entry>
+                <Label
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Text="Password"
+                    VerticalOptions="Center">
+                </Label>
+                <Entry
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    IsPassword="True"
+                    Placeholder="Enter your password...">
+                </Entry>
+            </Grid>
+            <ActivityIndicator
+                VerticalOptions="CenterAndExpand">
+
+            </ActivityIndicator>
+            <StackLayout
+                Margin="10,0"
+                Orientation="Horizontal"
+                VerticalOptions="CenterAndExpand">
+                <Label
+                    HorizontalOptions="StartAndExpand"
+                    Text="Rememberme on this device..."
+                    VerticalOptions="Center">
+                </Label>
+                <Switch
+                    HorizontalOptions="End">
+                </Switch>
+            </StackLayout>
+            <Label
+                HorizontalOptions="Center"
+                Text="Forgot your password..."
+                TextColor="Blue"
+                VerticalOptions="CenterAndExpand">
+
+            </Label>
+            <StackLayout
+                Orientation="Horizontal"
+                Margin="30,0"
+                VerticalOptions="CenterAndExpand">
+                <Button
+                    BorderRadius="23"
+                    BackgroundColor="Navy"
+                    HeightRequest="46"
+                    HorizontalOptions="FillAndExpand"
+                    Text="Login"
+                    TextColor="White">
+                </Button>
+                <Button
+                    BackgroundColor="Purple"
+                    BorderRadius="23"
+                    HeightRequest="46"
+                    HorizontalOptions="FillAndExpand"
+                    Text="Register"
+                    TextColor="White">
+                </Button>
+            </StackLayout>
+            <StackLayout
+                Margin="30,0"
+                Orientation="Horizontal"
+                VerticalOptions="EndAndExpand">
+                <Image
+                    HorizontalOptions="StartAndExpand"
+                    Source="facebook_logo"
+                    WidthRequest="60">
+                </Image>
+                <Image
+                    HorizontalOptions="CenterAndExpand"
+                    Source="twitter_logo"
+                    WidthRequest="60">
+                </Image>
+                <Image
+                    HorizontalOptions="EndAndExpand"
+                    Source="instagram_logo"
+                    WidthRequest="60">
+                </Image>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
